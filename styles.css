@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a8e6cf, #dcedc1, #aed581);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #4caf50;
+}
+
+input {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #81c784;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #66bb6a;
+}
+
+#result {
+    margin-top: 20px;
+    display: none;
+}
+
+#clusterResult {
+    font-weight: bold;
+    color: #00796b;
+}
+
+#description {
+    margin-top: 10px;
+}
+
+.form-section, .graphs-section {
+    display: none;
+}
+
+.graphs-section {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #388e3c;
+}
+
+/* Cores suaves para cada cluster */
+.cluster-0 {
+    background-color: #b2dfdb;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.cluster-1 {
+    background-color: #c8e6c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.cluster-2 {
+    background-color: #dcedc8;
+    padding: 10px;
+    border-radius: 4px;
+}

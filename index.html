@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clusterização de Funcionários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div id="form-section" class="form-section">
+            <h1>Clusterização de Funcionários</h1>
+            <form id="employeeForm">
+                <label for="age">Idade: (20-60)</label>
+                <input type="number" id="age" name="age" required min="20" max="60">
+
+                <label for="experience">Anos de Experiência: (0-40)</label>
+                <input type="number" id="experience" name="experience" required min="0" max="40">
+
+                <label for="hours">Horas Trabalhadas por Semana: (20-60)</label>
+                <input type="number" id="hours" name="hours" required min="20" max="60">
+
+                <label for="projects">Projetos Concluídos: (0-30)</label>
+                <input type="number" id="projects" name="projects" required min="0" max="30">
+
+                <label for="performance">Pontuação de Desempenho: (0-10)</label>
+                <input type="number" id="performance" name="performance" required min="0" max="10">
+
+                <button type="submit">Calcular Cluster</button>
+            </form>
+            <div id="result" class="result-box">
+                <h2>Resultado:</h2>
+                <p id="clusterResult"></p>
+                <p id="description"></p>
+            </div>
+        </div>
+
+        <div id="graphs-section" class="graphs-section">
+            <h2>Scatter Plot K-Means</h2>
+            <img src="scatter_plot.png" alt="Scatter Plot">
+            <h2>Scatter Plot K-Medoids</h2>
+            <img src="scatter_plot_kmedoids.png" alt="Scatter Plot">
+            <h2>Scatter Plot Hierarquico</h2>
+            <img src="scatter_plot_hierarquico.png" alt="Scatter Plot">
+            <h2>Coeficientes</h2>
+            <img src="coeficientes.png" alt="Coeficientes">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
